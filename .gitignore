@@ -1,0 +1,8 @@
+.idea
+.mvn
+target/
+core.iml
+mvnw
+mvnw.cmd
+uploads/
+.DS_Store

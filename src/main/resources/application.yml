@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    # LOCAL url: jdbc:mysql://localhost/db_springboot_backend?useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://w1kr9ijlozl9l79i.chr7pe7iynqr.eu-west-1.rds.amazonaws.com/xyxmc91yindi3t2g?useSSL=false
+    # LOCAL username: root
+    username: yhof34dr8s4rtw9c
+    # LOCAL password: Rla171290!!
+    password: xuged2nr7tp9lqcc
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL57Dialect
+    # LOCAL database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: create-drop
+  jackson:
+    time-zone: Europe/Madrid
+    locale: es_ES
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+logging:
+  level:
+    org.hibernate.SQL: debug
+
+server:
+  port: ${PORT:8080}
+
+  mysql://yhof34dr8s4rtw9c:xuged2nr7tp9lqcc@w1kr9ijlozl9l79i:
+    chr7pe7iynqr:
+      eu-west-1:
+        rds:
+          amazonaws:
+            com:3306/xyxmc91yindi3t2:
